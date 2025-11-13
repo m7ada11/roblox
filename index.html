@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>تسجيل الدخول - اسم لعبتك</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">اسم لعبتك</div>
+      <nav class="nav">
+        <a href="#">الصفحة الرئيسية</a>
+        <a href="#">المتجر</a>
+        <a href="#">الإنشاء</a>
+        <a href="#">بحث</a>
+      </nav>
+      <div class="actions">
+        <button class="btn outline">تسجيل</button>
+        <button class="btn primary">تسجيل الدخول</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="bg-tiles" aria-hidden="true"></div>
+
+    <div class="login-card">
+      <h1>تسجيل الدخول إلى <span>اسم لعبتك</span></h1>
+
+      <form id="loginForm">
+        <label for="username">اسم المستخدم أو البريد/الهاتف</label>
+        <input id="username" name="username" type="text" placeholder="اسم المستخدم أو البريد/الهاتف" required />
+
+        <label for="password">كلمة المرور</label>
+        <div class="pw-wrap">
+          <input id="password" name="password" type="password" placeholder="كلمة المرور" required />
+          <button type="button" id="togglePw" class="toggle-pw" aria-label="إظهار كلمة المرور">👁️</button>
+        </div>
+
+        <button class="btn primary wide" type="submit">تسجيل الدخول</button>
+
+        <div class="links">
+          <a href="#">هل نسيت كلمة المرور؟</a>
+          <a href="#">إنشاء حساب جديد</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
